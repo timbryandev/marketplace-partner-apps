@@ -9,6 +9,9 @@ name: "CodeQL Scan for GitHub Actions Workflows"
     branches: [main]
     paths: ['.github/workflows/**']
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
     name: Analyze GitHub Actions workflows
